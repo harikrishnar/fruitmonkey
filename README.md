@@ -1,2 +1,2 @@
 # fruitmonkey
-A fruit monkey game
+A fruit monkey game with physics
