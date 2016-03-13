@@ -136,21 +136,21 @@
 		2DDAB1D71C9583B600EC265C /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		2DDAB1D81C9583B600EC265C /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		2DDAB1DB1C95855A00EC265C /* Floor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Floor.cpp; sourceTree = "<group>"; };
-		2DDAB1DC1C95855A00EC265C /* Floor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Floor.hpp; sourceTree = "<group>"; };
+		2DDAB1DC1C95855A00EC265C /* Floor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Floor.h; sourceTree = "<group>"; };
 		2DDAB1DF1C95856F00EC265C /* HudLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HudLayer.cpp; sourceTree = "<group>"; };
-		2DDAB1E01C95856F00EC265C /* HudLayer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HudLayer.hpp; sourceTree = "<group>"; };
+		2DDAB1E01C95856F00EC265C /* HudLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudLayer.h; sourceTree = "<group>"; };
 		2DDAB1E31C95857E00EC265C /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
-		2DDAB1E41C95857E00EC265C /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		2DDAB1E41C95857E00EC265C /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		2DDAB1E71C95859000EC265C /* GoodObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoodObject.cpp; sourceTree = "<group>"; };
-		2DDAB1E81C95859000EC265C /* GoodObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GoodObject.hpp; sourceTree = "<group>"; };
+		2DDAB1E81C95859000EC265C /* GoodObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodObject.h; sourceTree = "<group>"; };
 		2DDAB1EB1C95859D00EC265C /* BadObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BadObject.cpp; sourceTree = "<group>"; };
-		2DDAB1EC1C95859D00EC265C /* BadObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BadObject.hpp; sourceTree = "<group>"; };
+		2DDAB1EC1C95859D00EC265C /* BadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadObject.h; sourceTree = "<group>"; };
 		2DDAB1EF1C9585B900EC265C /* Monkey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Monkey.cpp; sourceTree = "<group>"; };
-		2DDAB1F01C9585B900EC265C /* Monkey.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Monkey.hpp; sourceTree = "<group>"; };
+		2DDAB1F01C9585B900EC265C /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		2DDAB1F31C9585D800EC265C /* IntroScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntroScene.cpp; sourceTree = "<group>"; };
-		2DDAB1F41C9585D800EC265C /* IntroScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IntroScene.hpp; sourceTree = "<group>"; };
+		2DDAB1F41C9585D800EC265C /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
 		2DDAB1F81C958A5500EC265C /* HudController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HudController.cpp; sourceTree = "<group>"; };
-		2DDAB1F91C958A5500EC265C /* HudController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HudController.hpp; sourceTree = "<group>"; };
+		2DDAB1F91C958A5500EC265C /* HudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudController.h; sourceTree = "<group>"; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -340,21 +340,21 @@
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				2DDAB1DB1C95855A00EC265C /* Floor.cpp */,
-				2DDAB1DC1C95855A00EC265C /* Floor.hpp */,
+				2DDAB1DC1C95855A00EC265C /* Floor.h */,
 				2DDAB1DF1C95856F00EC265C /* HudLayer.cpp */,
-				2DDAB1E01C95856F00EC265C /* HudLayer.hpp */,
+				2DDAB1E01C95856F00EC265C /* HudLayer.h */,
 				2DDAB1E31C95857E00EC265C /* Object.cpp */,
-				2DDAB1E41C95857E00EC265C /* Object.hpp */,
+				2DDAB1E41C95857E00EC265C /* Object.h */,
 				2DDAB1E71C95859000EC265C /* GoodObject.cpp */,
-				2DDAB1E81C95859000EC265C /* GoodObject.hpp */,
+				2DDAB1E81C95859000EC265C /* GoodObject.h */,
 				2DDAB1EB1C95859D00EC265C /* BadObject.cpp */,
-				2DDAB1EC1C95859D00EC265C /* BadObject.hpp */,
+				2DDAB1EC1C95859D00EC265C /* BadObject.h */,
 				2DDAB1EF1C9585B900EC265C /* Monkey.cpp */,
-				2DDAB1F01C9585B900EC265C /* Monkey.hpp */,
+				2DDAB1F01C9585B900EC265C /* Monkey.h */,
 				2DDAB1F31C9585D800EC265C /* IntroScene.cpp */,
-				2DDAB1F41C9585D800EC265C /* IntroScene.hpp */,
+				2DDAB1F41C9585D800EC265C /* IntroScene.h */,
 				2DDAB1F81C958A5500EC265C /* HudController.cpp */,
-				2DDAB1F91C958A5500EC265C /* HudController.hpp */,
+				2DDAB1F91C958A5500EC265C /* HudController.h */,
 			);
 			name = Classes;
 			path = ../Classes;
