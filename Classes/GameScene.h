@@ -22,7 +22,9 @@ private:
     Layer* monkeyLayer;
     Layer* scrollingLayer;
     Layer* groundLayer;
+    Layer* hudLayer;
     void onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event);
+    bool onContactBegin(PhysicsContact& contact);
     PhysicsShapeCache *shapeCache;
 };
 

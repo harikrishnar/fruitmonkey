@@ -25,7 +25,7 @@ void GameScene::spawnSprite(const std::string &name, Vec2 pos)
     auto sprite = Sprite::createWithSpriteFrameName(name);
     shapeCache->setBodyOnSprite(name, sprite);
     sprite->setPosition(pos);
-    addChild(sprite);
+    itemsLayer->addChild(sprite);
 }
 
 bool GameScene::onTouchesBegan(Touch *touch, Event *event)
@@ -47,6 +47,25 @@ void GameScene::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event
     CCLOG("Z: %f", acc->z);
 }
 
+bool GameScene::onContactBegin(PhysicsContact& contact)
+{
+    auto nodeA = contact.getShapeA()->getBody()->getNode();
+    auto nodeB = contact.getShapeB()->getBody()->getNode();
+    if (nodeA && nodeB)
+    {
+        if (nodeA->getName() == "bottom")
+        {
+            nodeB->removeFromParentAndCleanup(true);
+        }
+        else if (nodeB->getName() == "bottom")
+        {
+            nodeA->removeFromParentAndCleanup(true);
+        }
+    }
+    //bodies can collide
+    return true;
+}
+
 // on "init" you need to initialize your instance
 bool GameScene::init()
 {
@@ -60,32 +79,6 @@ bool GameScene::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     Device::setAccelerometerEnabled(true);
-    
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("common.plist");
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("background.plist");
-    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("items.plist");
-    
-    auto listener = EventListenerAcceleration::create(CC_CALLBACK_2(GameScene::onAcceleration, this));
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-    // add "HelloWorld" splash screen"
-    auto sprite = Sprite::createWithSpriteFrameName("background.png");
-
-    // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-
-    // add the sprite as a child to this layer
-    this->addChild(sprite, 0);
-//    sprite->runAction(RepeatForever::create(Sequence::create(MoveTo::create(2.5, Vec2(visibleSize.width/2.0+25,visibleSize.height/2)), MoveTo::create(2.5, Vec2(visibleSize.width/2.0-25,visibleSize.height/2)), NULL)));
-    
-    sprite = Sprite::createWithSpriteFrameName("foreground.png");
-    
-    // position the sprite on the center of the screen
-    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-    
-    // add the sprite as a child to this layer
-    this->addChild(sprite, 5);
-    
     shapeCache = PhysicsShapeCache::getInstance();
     float scaleFactor = 1.0;
     if (visibleSize.height <= 320) {
@@ -94,6 +87,56 @@ bool GameScene::init()
         scaleFactor = 2.0;
     }
     shapeCache->addShapesWithFile("shapes.plist", scaleFactor);
+    
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("common.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("background.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("items.plist");
+    
+    auto listener = EventListenerAcceleration::create(CC_CALLBACK_2(GameScene::onAcceleration, this));
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+    auto contactListener = EventListenerPhysicsContact::create();
+    contactListener->onContactBegin = CC_CALLBACK_1(GameScene::onContactBegin,
+                                                    this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener,
+                                                             this);
+
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+
+    groundLayer = Layer::create();
+    this->addChild(groundLayer, 0);
+
+    scrollingLayer = Layer::create();
+    this->addChild(scrollingLayer, 10);
+
+    monkeyLayer = Layer::create();
+    this->addChild(monkeyLayer, 11);
+
+    itemsLayer = Layer::create();
+    this->addChild(itemsLayer, 20);
+
+    hudLayer = Layer::create();
+    this->addChild(hudLayer, 30);
+
+    // add "HelloWorld" splash screen"
+    auto backgroundSprite = Sprite::createWithSpriteFrameName("background.png");
+
+    // position the sprite on the center of the screen
+    backgroundSprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+
+    // add the sprite as a child to this layer
+    groundLayer->addChild(backgroundSprite, 0);
+//    sprite->runAction(RepeatForever::create(Sequence::create(MoveTo::create(2.5, Vec2(visibleSize.width/2.0+25,visibleSize.height/2)), MoveTo::create(2.5, Vec2(visibleSize.width/2.0-25,visibleSize.height/2)), NULL)));
+    
+    auto foregroundSprite = Sprite::createWithSpriteFrameName("foreground.png");
+    
+    // position the sprite on the center of the screen
+    foregroundSprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    
+    // add the sprite as a child to this layer
+    groundLayer->addChild(foregroundSprite, 5);
     
     auto pos = Vec2(Director::getInstance()->getWinSize()) / 2 + Director::getInstance()->getVisibleOrigin();
     
@@ -107,7 +150,6 @@ bool GameScene::init()
 //    }
 //    border->setPosition(0,0);
 //    this->addChild(border);
-    spawnSprite("banana.png", pos);
     
     auto leftLayer = Layer::create();
     leftLayer->setContentSize(Size(2, visibleSize.height));
@@ -115,7 +157,7 @@ bool GameScene::init()
     borderBody->setDynamic(false);
     leftLayer->setPhysicsBody(borderBody);
     leftLayer->setPosition(-2, 0);
-    this->addChild(leftLayer);
+    itemsLayer->addChild(leftLayer);
     
     auto rightLayer = Layer::create();
     rightLayer->setContentSize(Size(2, visibleSize.height));
@@ -123,7 +165,7 @@ bool GameScene::init()
     borderBody->setDynamic(false);
     rightLayer->setPhysicsBody(borderBody);
     rightLayer->setPosition(visibleSize.width, 0);
-    this->addChild(rightLayer);
+    itemsLayer->addChild(rightLayer);
     
     auto bottomLayer = Layer::create();
     bottomLayer->setContentSize(Size(visibleSize.width, 20));
@@ -131,11 +173,11 @@ bool GameScene::init()
     borderBody->setDynamic(false);
     bottomLayer->setPhysicsBody(borderBody);
     bottomLayer->setPosition(0, 0);
-    this->addChild(bottomLayer);
+    bottomLayer->getPhysicsBody()->setContactTestBitmask(0xfffffffd);
+    bottomLayer->setName("bottom");
+    itemsLayer->addChild(bottomLayer);
     
-    auto listener1 = EventListenerTouchOneByOne::create();
-    listener1->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener1, this);
+    spawnSprite("coconut.png", pos);
     
     return true;
 }
