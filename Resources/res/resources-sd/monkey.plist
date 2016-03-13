@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>fall/monkeyfall0001.png</key>
+            <key>fall/monkey0001.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -19,7 +19,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0002.png</key>
+            <key>fall/monkey0002.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -34,7 +34,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0003.png</key>
+            <key>fall/monkey0003.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -49,7 +49,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0004.png</key>
+            <key>fall/monkey0004.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -64,7 +64,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0005.png</key>
+            <key>fall/monkey0005.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -79,7 +79,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0006.png</key>
+            <key>fall/monkey0006.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -94,7 +94,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0007.png</key>
+            <key>fall/monkey0007.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -109,7 +109,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0008.png</key>
+            <key>fall/monkey0008.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -124,7 +124,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0009.png</key>
+            <key>fall/monkey0009.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -139,7 +139,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0010.png</key>
+            <key>fall/monkey0010.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -154,7 +154,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0011.png</key>
+            <key>fall/monkey0011.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -169,7 +169,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0012.png</key>
+            <key>fall/monkey0012.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -184,7 +184,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0013.png</key>
+            <key>fall/monkey0013.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -199,7 +199,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0014.png</key>
+            <key>fall/monkey0014.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -214,7 +214,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0015.png</key>
+            <key>fall/monkey0015.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -229,7 +229,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0016.png</key>
+            <key>fall/monkey0016.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -244,7 +244,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0017.png</key>
+            <key>fall/monkey0017.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -259,7 +259,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0018.png</key>
+            <key>fall/monkey0018.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -274,7 +274,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0019.png</key>
+            <key>fall/monkey0019.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -289,7 +289,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0020.png</key>
+            <key>fall/monkey0020.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -304,7 +304,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0021.png</key>
+            <key>fall/monkey0021.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -319,7 +319,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0022.png</key>
+            <key>fall/monkey0022.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -334,7 +334,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0023.png</key>
+            <key>fall/monkey0023.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -349,7 +349,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0024.png</key>
+            <key>fall/monkey0024.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -364,7 +364,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0025.png</key>
+            <key>fall/monkey0025.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -379,7 +379,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0026.png</key>
+            <key>fall/monkey0026.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -394,7 +394,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0027.png</key>
+            <key>fall/monkey0027.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -409,7 +409,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0028.png</key>
+            <key>fall/monkey0028.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -424,7 +424,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0029.png</key>
+            <key>fall/monkey0029.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -439,7 +439,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0030.png</key>
+            <key>fall/monkey0030.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -454,7 +454,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0031.png</key>
+            <key>fall/monkey0031.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -469,7 +469,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0032.png</key>
+            <key>fall/monkey0032.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -484,7 +484,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0033.png</key>
+            <key>fall/monkey0033.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -499,7 +499,7 @@
                 <key>textureRotated</key>
                 <true/>
             </dict>
-            <key>fall/monkeyfall0034.png</key>
+            <key>fall/monkey0034.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -514,7 +514,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0035.png</key>
+            <key>fall/monkey0035.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -529,7 +529,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>fall/monkeyfall0036.png</key>
+            <key>fall/monkey0036.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -544,7 +544,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0001.png</key>
+            <key>run/monkey0001.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -559,7 +559,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0002.png</key>
+            <key>run/monkey0002.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -574,7 +574,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0003.png</key>
+            <key>run/monkey0003.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -589,7 +589,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0004.png</key>
+            <key>run/monkey0004.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -604,7 +604,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0005.png</key>
+            <key>run/monkey0005.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -619,7 +619,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0006.png</key>
+            <key>run/monkey0006.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -634,7 +634,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0007.png</key>
+            <key>run/monkey0007.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -649,7 +649,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0008.png</key>
+            <key>run/monkey0008.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -664,7 +664,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0009.png</key>
+            <key>run/monkey0009.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -679,7 +679,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0010.png</key>
+            <key>run/monkey0010.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -694,7 +694,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0011.png</key>
+            <key>run/monkey0011.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -709,7 +709,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0012.png</key>
+            <key>run/monkey0012.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -724,7 +724,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0013.png</key>
+            <key>run/monkey0013.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -739,7 +739,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0014.png</key>
+            <key>run/monkey0014.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -754,7 +754,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0015.png</key>
+            <key>run/monkey0015.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -769,7 +769,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0016.png</key>
+            <key>run/monkey0016.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -784,7 +784,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0017.png</key>
+            <key>run/monkey0017.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -799,7 +799,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0018.png</key>
+            <key>run/monkey0018.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -814,7 +814,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0019.png</key>
+            <key>run/monkey0019.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -829,7 +829,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0020.png</key>
+            <key>run/monkey0020.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -844,7 +844,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0021.png</key>
+            <key>run/monkey0021.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -859,7 +859,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0022.png</key>
+            <key>run/monkey0022.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -874,7 +874,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>run/monkeyrun0023.png</key>
+            <key>run/monkey0023.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -889,7 +889,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0001.png</key>
+            <key>throw/monkey0001.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -904,7 +904,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0002.png</key>
+            <key>throw/monkey0002.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -919,7 +919,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0003.png</key>
+            <key>throw/monkey0003.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -934,7 +934,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0004.png</key>
+            <key>throw/monkey0004.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -949,7 +949,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0005.png</key>
+            <key>throw/monkey0005.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -964,7 +964,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0006.png</key>
+            <key>throw/monkey0006.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -979,7 +979,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0007.png</key>
+            <key>throw/monkey0007.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -994,7 +994,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0008.png</key>
+            <key>throw/monkey0008.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1009,7 +1009,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0009.png</key>
+            <key>throw/monkey0009.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1024,7 +1024,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0010.png</key>
+            <key>throw/monkey0010.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1039,7 +1039,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0011.png</key>
+            <key>throw/monkey0011.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1054,7 +1054,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0012.png</key>
+            <key>throw/monkey0012.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1069,7 +1069,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0013.png</key>
+            <key>throw/monkey0013.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1084,7 +1084,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0014.png</key>
+            <key>throw/monkey0014.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1099,7 +1099,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0015.png</key>
+            <key>throw/monkey0015.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1114,7 +1114,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0016.png</key>
+            <key>throw/monkey0016.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1129,7 +1129,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0017.png</key>
+            <key>throw/monkey0017.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1144,7 +1144,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0018.png</key>
+            <key>throw/monkey0018.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1159,7 +1159,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0019.png</key>
+            <key>throw/monkey0019.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1174,7 +1174,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0020.png</key>
+            <key>throw/monkey0020.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1189,7 +1189,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0021.png</key>
+            <key>throw/monkey0021.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1204,7 +1204,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0022.png</key>
+            <key>throw/monkey0022.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1219,7 +1219,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0023.png</key>
+            <key>throw/monkey0023.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1234,7 +1234,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0024.png</key>
+            <key>throw/monkey0024.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1249,7 +1249,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0025.png</key>
+            <key>throw/monkey0025.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1264,7 +1264,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0026.png</key>
+            <key>throw/monkey0026.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1279,7 +1279,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0027.png</key>
+            <key>throw/monkey0027.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1294,7 +1294,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0028.png</key>
+            <key>throw/monkey0028.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1309,7 +1309,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0029.png</key>
+            <key>throw/monkey0029.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1324,7 +1324,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0030.png</key>
+            <key>throw/monkey0030.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1339,7 +1339,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0031.png</key>
+            <key>throw/monkey0031.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1354,7 +1354,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0032.png</key>
+            <key>throw/monkey0032.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1369,7 +1369,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0033.png</key>
+            <key>throw/monkey0033.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1384,7 +1384,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0034.png</key>
+            <key>throw/monkey0034.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1399,7 +1399,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0035.png</key>
+            <key>throw/monkey0035.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1414,7 +1414,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0036.png</key>
+            <key>throw/monkey0036.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1429,7 +1429,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0037.png</key>
+            <key>throw/monkey0037.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1444,7 +1444,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0038.png</key>
+            <key>throw/monkey0038.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1459,7 +1459,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0039.png</key>
+            <key>throw/monkey0039.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1474,7 +1474,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0040.png</key>
+            <key>throw/monkey0040.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1489,7 +1489,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0041.png</key>
+            <key>throw/monkey0041.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1504,7 +1504,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0042.png</key>
+            <key>throw/monkey0042.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1519,7 +1519,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0043.png</key>
+            <key>throw/monkey0043.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1534,7 +1534,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0044.png</key>
+            <key>throw/monkey0044.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1549,7 +1549,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0045.png</key>
+            <key>throw/monkey0045.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1564,7 +1564,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0046.png</key>
+            <key>throw/monkey0046.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1579,7 +1579,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0047.png</key>
+            <key>throw/monkey0047.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1594,7 +1594,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0048.png</key>
+            <key>throw/monkey0048.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1609,7 +1609,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0049.png</key>
+            <key>throw/monkey0049.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1624,7 +1624,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0050.png</key>
+            <key>throw/monkey0050.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1639,7 +1639,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>throw/monkeythrow0051.png</key>
+            <key>throw/monkey0051.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -1668,7 +1668,7 @@
             <key>size</key>
             <string>{1510,246}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b3635ecbd0865b14e1b537ab89a5d1ad:c0c4944f86f83478e5cab182cc295e46:375f08ab9a772434ef2b963ca92dd2a8$</string>
+            <string>$TexturePacker:SmartUpdate:f9c347d5c102e190f0d9af2899d08d2b:c0c4944f86f83478e5cab182cc295e46:375f08ab9a772434ef2b963ca92dd2a8$</string>
             <key>textureFileName</key>
             <string>monkey.pvr.ccz</string>
         </dict>
