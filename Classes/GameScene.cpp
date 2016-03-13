@@ -1,3 +1,11 @@
+//
+//  GameScene.cpp
+//  fruitmonkey
+//
+//  Created by Hari Krishna on 13/03/16.
+//
+//
+
 #include "GameScene.h"
 
 USING_NS_CC;

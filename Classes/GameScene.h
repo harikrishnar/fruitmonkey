@@ -1,3 +1,12 @@
+//
+//  GameScene.h
+//  fruitmonkey
+//
+//  Created by Hari Krishna on 13/03/16.
+//
+//
+
+
 #ifndef __GameScene_SCENE_H__
 #define __GameScene_SCENE_H__
 

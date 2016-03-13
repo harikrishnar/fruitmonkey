@@ -2,8 +2,8 @@
 //  HudLayer.cpp
 //  fruitmonkey
 //
-//  Created by  Ajay palanisamy B on 13/03/16.
+//  Created by Hari Krishna on 13/03/16.
 //
 //
 
-#include "HudLayer.hpp"
+#include "HudLayer.h"
