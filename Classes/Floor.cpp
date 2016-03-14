@@ -7,3 +7,17 @@
 //
 
 #include "Floor.h"
+
+
+Floor::Floor() {
+    isStatic = true;
+    usePhysics = true;
+}
+
+Floor::~Floor() {
+    
+}
+
+void Floor::create(ObjectType type) {
+    
+}

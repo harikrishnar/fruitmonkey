@@ -12,6 +12,26 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2D5653F91C95F9BA00043CE7 /* ConfigController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F31C95F9BA00043CE7 /* ConfigController.cpp */; };
+		2D5653FA1C95F9BA00043CE7 /* ConfigController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F31C95F9BA00043CE7 /* ConfigController.cpp */; };
+		2D5653FB1C95F9BA00043CE7 /* HudController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F51C95F9BA00043CE7 /* HudController.cpp */; };
+		2D5653FC1C95F9BA00043CE7 /* HudController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F51C95F9BA00043CE7 /* HudController.cpp */; };
+		2D5653FD1C95F9BA00043CE7 /* JsonController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F71C95F9BA00043CE7 /* JsonController.cpp */; };
+		2D5653FE1C95F9BA00043CE7 /* JsonController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653F71C95F9BA00043CE7 /* JsonController.cpp */; };
+		2D5654011C96024B00043CE7 /* Basket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653FF1C96024B00043CE7 /* Basket.cpp */; };
+		2D5654021C96024B00043CE7 /* Basket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5653FF1C96024B00043CE7 /* Basket.cpp */; };
+		2D5654051C96060400043CE7 /* BasketWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654031C96060400043CE7 /* BasketWave.cpp */; };
+		2D5654061C96060400043CE7 /* BasketWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654031C96060400043CE7 /* BasketWave.cpp */; };
+		2D5654081C96638B00043CE7 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 2D5654071C96638B00043CE7 /* ccbi */; };
+		2D5654091C96638B00043CE7 /* ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 2D5654071C96638B00043CE7 /* ccbi */; };
+		2D56540C1C9685AC00043CE7 /* Lives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D56540A1C9685AC00043CE7 /* Lives.cpp */; };
+		2D56540D1C9685AC00043CE7 /* Lives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D56540A1C9685AC00043CE7 /* Lives.cpp */; };
+		2D5654101C9685FD00043CE7 /* LevelProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D56540E1C9685FD00043CE7 /* LevelProgress.cpp */; };
+		2D5654111C9685FD00043CE7 /* LevelProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D56540E1C9685FD00043CE7 /* LevelProgress.cpp */; };
+		2D5654141C96861D00043CE7 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654121C96861D00043CE7 /* Clock.cpp */; };
+		2D5654151C96861D00043CE7 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654121C96861D00043CE7 /* Clock.cpp */; };
+		2D5654181C96864700043CE7 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654161C96864700043CE7 /* GameOverScene.cpp */; };
+		2D5654191C96864700043CE7 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5654161C96864700043CE7 /* GameOverScene.cpp */; };
 		2DDAB1CF1C95442D00EC265C /* PhysicsShapeCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1CD1C95442D00EC265C /* PhysicsShapeCache.cpp */; };
 		2DDAB1D01C95442D00EC265C /* PhysicsShapeCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1CD1C95442D00EC265C /* PhysicsShapeCache.cpp */; };
 		2DDAB1D51C957EBF00EC265C /* shapes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DDAB1D41C957EBF00EC265C /* shapes.plist */; };
@@ -32,8 +52,6 @@
 		2DDAB1F21C9585B900EC265C /* Monkey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1EF1C9585B900EC265C /* Monkey.cpp */; };
 		2DDAB1F51C9585D800EC265C /* IntroScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1F31C9585D800EC265C /* IntroScene.cpp */; };
 		2DDAB1F61C9585D800EC265C /* IntroScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1F31C9585D800EC265C /* IntroScene.cpp */; };
-		2DDAB1FA1C958A5500EC265C /* HudController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1F81C958A5500EC265C /* HudController.cpp */; };
-		2DDAB1FB1C958A5500EC265C /* HudController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DDAB1F81C958A5500EC265C /* HudController.cpp */; };
 		3EACC98F19EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		3EACC99019EE6D4300EB3C5E /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3EACC98E19EE6D4300EB3C5E /* res */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
@@ -130,6 +148,25 @@
 		1D6058910D05DD3D006BFB54 /* fruitmonkey-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fruitmonkey-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2D5653F31C95F9BA00043CE7 /* ConfigController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigController.cpp; sourceTree = "<group>"; };
+		2D5653F41C95F9BA00043CE7 /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
+		2D5653F51C95F9BA00043CE7 /* HudController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HudController.cpp; sourceTree = "<group>"; };
+		2D5653F61C95F9BA00043CE7 /* HudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudController.h; sourceTree = "<group>"; };
+		2D5653F71C95F9BA00043CE7 /* JsonController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonController.cpp; sourceTree = "<group>"; };
+		2D5653F81C95F9BA00043CE7 /* JsonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonController.h; sourceTree = "<group>"; };
+		2D5653FF1C96024B00043CE7 /* Basket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Basket.cpp; sourceTree = "<group>"; };
+		2D5654001C96024B00043CE7 /* Basket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basket.h; sourceTree = "<group>"; };
+		2D5654031C96060400043CE7 /* BasketWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasketWave.cpp; sourceTree = "<group>"; };
+		2D5654041C96060400043CE7 /* BasketWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasketWave.h; sourceTree = "<group>"; };
+		2D5654071C96638B00043CE7 /* ccbi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccbi; sourceTree = "<group>"; };
+		2D56540A1C9685AC00043CE7 /* Lives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lives.cpp; sourceTree = "<group>"; };
+		2D56540B1C9685AC00043CE7 /* Lives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lives.h; sourceTree = "<group>"; };
+		2D56540E1C9685FD00043CE7 /* LevelProgress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelProgress.cpp; sourceTree = "<group>"; };
+		2D56540F1C9685FD00043CE7 /* LevelProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelProgress.h; sourceTree = "<group>"; };
+		2D5654121C96861D00043CE7 /* Clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Clock.cpp; sourceTree = "<group>"; };
+		2D5654131C96861D00043CE7 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		2D5654161C96864700043CE7 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameOverScene.cpp; sourceTree = "<group>"; };
+		2D5654171C96864700043CE7 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
 		2DDAB1CD1C95442D00EC265C /* PhysicsShapeCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsShapeCache.cpp; sourceTree = "<group>"; };
 		2DDAB1CE1C95442D00EC265C /* PhysicsShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsShapeCache.h; sourceTree = "<group>"; };
 		2DDAB1D41C957EBF00EC265C /* shapes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shapes.plist; sourceTree = "<group>"; };
@@ -149,8 +186,6 @@
 		2DDAB1F01C9585B900EC265C /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		2DDAB1F31C9585D800EC265C /* IntroScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntroScene.cpp; sourceTree = "<group>"; };
 		2DDAB1F41C9585D800EC265C /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
-		2DDAB1F81C958A5500EC265C /* HudController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HudController.cpp; sourceTree = "<group>"; };
-		2DDAB1F91C958A5500EC265C /* HudController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudController.h; sourceTree = "<group>"; };
 		3EACC98E19EE6D4300EB3C5E /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -319,9 +354,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2D5653F21C95F9BA00043CE7 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D5653F31C95F9BA00043CE7 /* ConfigController.cpp */,
+				2D5653F41C95F9BA00043CE7 /* ConfigController.h */,
+				2D5653F51C95F9BA00043CE7 /* HudController.cpp */,
+				2D5653F61C95F9BA00043CE7 /* HudController.h */,
+				2D5653F71C95F9BA00043CE7 /* JsonController.cpp */,
+				2D5653F81C95F9BA00043CE7 /* JsonController.h */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D5654071C96638B00043CE7 /* ccbi */,
 				2DDAB1D41C957EBF00EC265C /* shapes.plist */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
@@ -333,6 +382,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2D5653F21C95F9BA00043CE7 /* controllers */,
 				2DDAB1D71C9583B600EC265C /* GameScene.cpp */,
 				2DDAB1D81C9583B600EC265C /* GameScene.h */,
 				2DDAB1CD1C95442D00EC265C /* PhysicsShapeCache.cpp */,
@@ -353,8 +403,18 @@
 				2DDAB1F01C9585B900EC265C /* Monkey.h */,
 				2DDAB1F31C9585D800EC265C /* IntroScene.cpp */,
 				2DDAB1F41C9585D800EC265C /* IntroScene.h */,
-				2DDAB1F81C958A5500EC265C /* HudController.cpp */,
-				2DDAB1F91C958A5500EC265C /* HudController.h */,
+				2D5653FF1C96024B00043CE7 /* Basket.cpp */,
+				2D5654001C96024B00043CE7 /* Basket.h */,
+				2D5654031C96060400043CE7 /* BasketWave.cpp */,
+				2D5654041C96060400043CE7 /* BasketWave.h */,
+				2D56540A1C9685AC00043CE7 /* Lives.cpp */,
+				2D56540B1C9685AC00043CE7 /* Lives.h */,
+				2D56540E1C9685FD00043CE7 /* LevelProgress.cpp */,
+				2D56540F1C9685FD00043CE7 /* LevelProgress.h */,
+				2D5654121C96861D00043CE7 /* Clock.cpp */,
+				2D5654131C96861D00043CE7 /* Clock.h */,
+				2D5654161C96864700043CE7 /* GameOverScene.cpp */,
+				2D5654171C96864700043CE7 /* GameOverScene.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -530,6 +590,7 @@
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
+				2D5654081C96638B00043CE7 /* ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +601,7 @@
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				2DDAB1D61C957EBF00EC265C /* shapes.plist in Resources */,
+				2D5654091C96638B00043CE7 /* ccbi in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,19 +613,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5654181C96864700043CE7 /* GameOverScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				2D5653FD1C95F9BA00043CE7 /* JsonController.cpp in Sources */,
 				2DDAB1E91C95859000EC265C /* GoodObject.cpp in Sources */,
 				2DDAB1DD1C95855A00EC265C /* Floor.cpp in Sources */,
 				2DDAB1F51C9585D800EC265C /* IntroScene.cpp in Sources */,
 				2DDAB1CF1C95442D00EC265C /* PhysicsShapeCache.cpp in Sources */,
 				2DDAB1E11C95856F00EC265C /* HudLayer.cpp in Sources */,
+				2D5653FB1C95F9BA00043CE7 /* HudController.cpp in Sources */,
 				2DDAB1ED1C95859D00EC265C /* BadObject.cpp in Sources */,
 				2DDAB1F11C9585B900EC265C /* Monkey.cpp in Sources */,
+				2D5654011C96024B00043CE7 /* Basket.cpp in Sources */,
+				2D5654051C96060400043CE7 /* BasketWave.cpp in Sources */,
+				2D56540C1C9685AC00043CE7 /* Lives.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				2DDAB1FA1C958A5500EC265C /* HudController.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				2D5654101C9685FD00043CE7 /* LevelProgress.cpp in Sources */,
 				2DDAB1D91C9583B600EC265C /* GameScene.cpp in Sources */,
+				2D5653F91C95F9BA00043CE7 /* ConfigController.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				2D5654141C96861D00043CE7 /* Clock.cpp in Sources */,
 				2DDAB1E51C95857E00EC265C /* Object.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,18 +642,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D56540D1C9685AC00043CE7 /* Lives.cpp in Sources */,
 				2DDAB1F21C9585B900EC265C /* Monkey.cpp in Sources */,
+				2D5654191C96864700043CE7 /* GameOverScene.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				2D5654111C9685FD00043CE7 /* LevelProgress.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				2DDAB1FB1C958A5500EC265C /* HudController.cpp in Sources */,
+				2D5653FA1C95F9BA00043CE7 /* ConfigController.cpp in Sources */,
 				2DDAB1DA1C9583B600EC265C /* GameScene.cpp in Sources */,
 				2DDAB1DE1C95855A00EC265C /* Floor.cpp in Sources */,
 				2DDAB1E61C95857E00EC265C /* Object.cpp in Sources */,
+				2D5654061C96060400043CE7 /* BasketWave.cpp in Sources */,
+				2D5654021C96024B00043CE7 /* Basket.cpp in Sources */,
 				2DDAB1D01C95442D00EC265C /* PhysicsShapeCache.cpp in Sources */,
 				2DDAB1F61C9585D800EC265C /* IntroScene.cpp in Sources */,
 				2DDAB1E21C95856F00EC265C /* HudLayer.cpp in Sources */,
+				2D5653FC1C95F9BA00043CE7 /* HudController.cpp in Sources */,
+				2D5653FE1C95F9BA00043CE7 /* JsonController.cpp in Sources */,
 				2DDAB1EA1C95859000EC265C /* GoodObject.cpp in Sources */,
 				2DDAB1EE1C95859D00EC265C /* BadObject.cpp in Sources */,
+				2D5654151C96861D00043CE7 /* Clock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

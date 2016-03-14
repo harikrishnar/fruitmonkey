@@ -10,5 +10,15 @@
 #define Floor_h
 
 #include <stdio.h>
+#include "Object.h"
+
+class Floor : public Object
+{
+public:
+	Floor();
+	~Floor();
+	
+	virtual void create(ObjectType) override;
+};
 
 #endif /* Floor_h */

@@ -55,6 +55,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
     
     std::vector<std::string> resourceDirs;
+    resourceDirs.push_back("ccbi");
     resourceDirs.push_back("res");
 
     // Set the design resolution

@@ -10,5 +10,15 @@
 #define BadObject_h
 
 #include <stdio.h>
+#include "Object.h"
+
+class BadObject : public Object
+{
+public:
+	BadObject();
+	~BadObject();
+	
+	virtual void create(ObjectType) override;
+};
 
 #endif /* BadObject_h */

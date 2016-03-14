@@ -1,0 +1,21 @@
+{
+    "INT_VALUE" : 610,
+    "FLOAT_VALUE" : 200.05,
+    "STRING_VALUE" : "this is a string",
+    "ARRAY_VALUE" : [ 170000000, 74000000, 657510, 62410, -5000 ],
+    "BOOL_VALUE": true,
+    "DICT_VALUE" : {
+        "one" : {
+            "lower" : 0,
+            "upper" : 450
+        },
+        "two" : {
+            "lower" : 451,
+            "upper" : 1500
+        },
+        "three" : {
+            "lower" : 1501,
+            "upper" : 2250
+        }
+    }
+}

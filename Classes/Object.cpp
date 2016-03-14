@@ -7,3 +7,14 @@
 //
 
 #include "Object.h"
+
+Object::Object()
+:isStatic(false)
+,usePhysics(true)
+{
+    
+}
+
+Object::~Object() {
+    
+}

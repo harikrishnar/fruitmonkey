@@ -7,6 +7,8 @@
 //
 
 #include "GameScene.h"
+#include "Monkey.h"
+#include "Basket.h"
 
 USING_NS_CC;
 
@@ -15,7 +17,7 @@ Scene* GameScene::createScene()
     // 'scene' is an autorelease object
     auto scene = Scene::createWithPhysics();
     scene->getPhysicsWorld()->setGravity(Vec2(0, -640));
-//    scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
+    scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
     
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
@@ -38,6 +40,13 @@ void GameScene::spawnSprite(const std::string &name, Vec2 pos)
 
 bool GameScene::onTouchesBegan(Touch *touch, Event *event)
 {
+    static int x = 0;
+    if (x == 0) {
+        auto basket = Basket::createBasket(true);
+        itemsLayer->addChild(basket);
+        x++;
+        return false;
+    }
     auto touchLoc = touch->getLocation();
     
     static int i = 0;
@@ -61,11 +70,11 @@ bool GameScene::onContactBegin(PhysicsContact& contact)
     auto nodeB = contact.getShapeB()->getBody()->getNode();
     if (nodeA && nodeB)
     {
-        if (nodeA->getName() == "bottom")
+        if (nodeA->getName() == "monkey")
         {
             nodeB->removeFromParentAndCleanup(true);
         }
-        else if (nodeB->getName() == "bottom")
+        else if (nodeB->getName() == "monkey")
         {
             nodeA->removeFromParentAndCleanup(true);
         }
@@ -99,34 +108,11 @@ bool GameScene::init()
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile("common.plist");
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile("background.plist");
     SpriteFrameCache::getInstance()->addSpriteFramesWithFile("items.plist");
+    SpriteFrameCache::getInstance()->addSpriteFramesWithFile("monkey.plist");
     
-    auto listener = EventListenerAcceleration::create(CC_CALLBACK_2(GameScene::onAcceleration, this));
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-    auto contactListener = EventListenerPhysicsContact::create();
-    contactListener->onContactBegin = CC_CALLBACK_1(GameScene::onContactBegin,
-                                                    this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener,
-                                                             this);
-
-    auto touchListener = EventListenerTouchOneByOne::create();
-    touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
-    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
-
-    groundLayer = Layer::create();
-    this->addChild(groundLayer, 0);
-
-    scrollingLayer = Layer::create();
-    this->addChild(scrollingLayer, 10);
-
-    monkeyLayer = Layer::create();
-    this->addChild(monkeyLayer, 11);
-
-    itemsLayer = Layer::create();
-    this->addChild(itemsLayer, 20);
-
-    hudLayer = Layer::create();
-    this->addChild(hudLayer, 30);
+    this->initListeners();
+    
+    this->initLayers();
 
     // add "HelloWorld" splash screen"
     auto backgroundSprite = Sprite::createWithSpriteFrameName("background.png");
@@ -136,8 +122,6 @@ bool GameScene::init()
 
     // add the sprite as a child to this layer
     groundLayer->addChild(backgroundSprite, 0);
-//    sprite->runAction(RepeatForever::create(Sequence::create(MoveTo::create(2.5, Vec2(visibleSize.width/2.0+25,visibleSize.height/2)), MoveTo::create(2.5, Vec2(visibleSize.width/2.0-25,visibleSize.height/2)), NULL)));
-    
     auto foregroundSprite = Sprite::createWithSpriteFrameName("foreground.png");
     
     // position the sprite on the center of the screen
@@ -159,33 +143,72 @@ bool GameScene::init()
 //    border->setPosition(0,0);
 //    this->addChild(border);
     
-    auto leftLayer = Layer::create();
-    leftLayer->setContentSize(Size(2, visibleSize.height));
-    auto borderBody = PhysicsBody::createBox(leftLayer->getContentSize());
+    this->createBoundary();
+    
+    auto monkey = Monkey::createMonkey();
+    monkeyLayer->addChild(monkey);
+    
+//    auto basket = Basket::createBasket(true);
+//    itemsLayer->addChild(basket);
+    
+    return true;
+}
+
+void GameScene::initLayers() {
+    groundLayer = Layer::create();
+    this->addChild(groundLayer, 0);
+    
+    scrollingLayer = Layer::create();
+    this->addChild(scrollingLayer, 10);
+    
+    itemsLayer = Layer::create();
+    this->addChild(itemsLayer, 20);
+
+    monkeyLayer = Layer::create();
+    this->addChild(monkeyLayer, 21);
+    
+    hudLayer = Layer::create();
+    this->addChild(hudLayer, 30);
+}
+
+void GameScene::initListeners() {
+    auto listener = EventListenerAcceleration::create(CC_CALLBACK_2(GameScene::onAcceleration, this));
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+    
+    auto contactListener = EventListenerPhysicsContact::create();
+    contactListener->onContactBegin = CC_CALLBACK_1(GameScene::onContactBegin,
+                                                    this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener,
+                                                             this);
+    
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+
+}
+
+Layer* GameScene::createPhysicsObject(cocos2d::Size size) {
+    auto layer = Layer::create();
+    layer->setContentSize(size);
+    auto borderBody = PhysicsBody::createBox(layer->getContentSize());
     borderBody->setDynamic(false);
-    leftLayer->setPhysicsBody(borderBody);
+    layer->setPhysicsBody(borderBody);
+    groundLayer->addChild(layer);
+    
+    return layer;
+}
+
+void GameScene::createBoundary() {
+    auto visibleSize = Director::getInstance()->getVisibleSize();
+    
+    auto leftLayer = createPhysicsObject(Size(2, visibleSize.height));
     leftLayer->setPosition(-2, 0);
-    itemsLayer->addChild(leftLayer);
     
-    auto rightLayer = Layer::create();
-    rightLayer->setContentSize(Size(2, visibleSize.height));
-    borderBody = PhysicsBody::createBox(rightLayer->getContentSize());
-    borderBody->setDynamic(false);
-    rightLayer->setPhysicsBody(borderBody);
+    auto rightLayer = createPhysicsObject(Size(2, visibleSize.height));
     rightLayer->setPosition(visibleSize.width, 0);
-    itemsLayer->addChild(rightLayer);
     
-    auto bottomLayer = Layer::create();
-    bottomLayer->setContentSize(Size(visibleSize.width, 20));
-    borderBody = PhysicsBody::createBox(bottomLayer->getContentSize());
-    borderBody->setDynamic(false);
-    bottomLayer->setPhysicsBody(borderBody);
+    auto bottomLayer = createPhysicsObject(Size(visibleSize.width, 20));
     bottomLayer->setPosition(0, 0);
     bottomLayer->getPhysicsBody()->setContactTestBitmask(0xfffffffd);
     bottomLayer->setName("bottom");
-    itemsLayer->addChild(bottomLayer);
-    
-    spawnSprite("coconut.png", pos);
-    
-    return true;
 }

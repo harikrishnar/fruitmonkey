@@ -10,5 +10,15 @@
 #define GoodObject_h
 
 #include <stdio.h>
+#include "Object.h"
+
+class GoodObject : public Object
+{
+public:
+	GoodObject();
+	~GoodObject();
+	
+	virtual void create(ObjectType) override;
+};
 
 #endif /* GoodObject_h */
