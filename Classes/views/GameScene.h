@@ -13,6 +13,8 @@
 #include "cocos2d.h"
 #include "PhysicsShapeCache.h"
 
+class Monkey;
+
 class GameScene : public cocos2d::Layer
 {
 public:
@@ -32,6 +34,8 @@ private:
     Layer* scrollingLayer;
     Layer* groundLayer;
     Layer* hudLayer;
+    
+    Monkey* playerMonkey;
     
     void createBoundary();
     void initLayers();

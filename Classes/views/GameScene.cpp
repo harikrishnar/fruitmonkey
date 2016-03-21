@@ -17,7 +17,7 @@ Scene* GameScene::createScene()
     // 'scene' is an autorelease object
     auto scene = Scene::createWithPhysics();
     scene->getPhysicsWorld()->setGravity(Vec2(0, -640));
-    scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
+//    scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
     
     // 'layer' is an autorelease object
     auto layer = GameScene::create();
@@ -40,7 +40,7 @@ void GameScene::spawnSprite(const std::string &name, Vec2 pos)
 
 bool GameScene::onTouchesBegan(Touch *touch, Event *event)
 {
-    static int x = 0;
+    static int x = 1;
     if (x == 0) {
         auto basket = Basket::createBasket(true);
         itemsLayer->addChild(basket);
@@ -59,9 +59,10 @@ bool GameScene::onTouchesBegan(Touch *touch, Event *event)
 }
 
 void GameScene::onAcceleration(cocos2d::Acceleration *acc, cocos2d::Event *event){
-    CCLOG("X: %f", acc->x);
-    CCLOG("Y: %f", acc->y);
-    CCLOG("Z: %f", acc->z);
+//    CCLOG("X: %f", acc->x);
+//    CCLOG("Y: %f", acc->y);
+//    CCLOG("Z: %f", acc->z);
+    this->playerMonkey->walk(acc->x);
 }
 
 bool GameScene::onContactBegin(PhysicsContact& contact)
@@ -95,7 +96,6 @@ bool GameScene::init()
     
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    Device::setAccelerometerEnabled(true);
     shapeCache = PhysicsShapeCache::getInstance();
     float scaleFactor = 1.0;
     if (visibleSize.height <= 320) {
@@ -145,8 +145,8 @@ bool GameScene::init()
     
     this->createBoundary();
     
-    auto monkey = Monkey::createMonkey();
-    monkeyLayer->addChild(monkey);
+    playerMonkey = Monkey::createMonkey();
+    monkeyLayer->addChild(playerMonkey);
     
 //    auto basket = Basket::createBasket(true);
 //    itemsLayer->addChild(basket);
@@ -207,8 +207,8 @@ void GameScene::createBoundary() {
     auto rightLayer = createPhysicsObject(Size(2, visibleSize.height));
     rightLayer->setPosition(visibleSize.width, 0);
     
-    auto bottomLayer = createPhysicsObject(Size(visibleSize.width, 20));
-    bottomLayer->setPosition(0, 0);
+    auto bottomLayer = createPhysicsObject(Size(visibleSize.width, 10));
+    bottomLayer->setPosition(0, 30);
     bottomLayer->getPhysicsBody()->setContactTestBitmask(0xfffffffd);
     bottomLayer->setName("bottom");
 }
